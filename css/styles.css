@@ -570,6 +570,12 @@ flex-direction: column;  height: 252px; */
   color: var(--primary-text-color-light);
   padding-right: 40px;
   margin-left: 10px;
+  transition: background-color var(--transition-dur-and-fanc);
+}
+
+.footer-form-sumbit:hover,
+.footer-form-sumbit:focus {
+  background-color: var(--accent-backgraund-color-btn);
 }
 
 .footer-form-input-icon {
