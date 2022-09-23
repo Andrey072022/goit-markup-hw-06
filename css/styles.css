@@ -733,6 +733,11 @@ flex-direction: column;  height: 252px; */
   color: var(--primary-text-color-dark);
   margin-bottom: 12px;
 }
+.model-form-input-wrapper {
+  position: relative;
+  display: block;
+}
+
 .modal-form {
   display: flex;
   flex-direction: column;
