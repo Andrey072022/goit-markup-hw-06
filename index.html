@@ -431,19 +431,19 @@
                         </li>
                     </ul>
                 </div>
-                <form class="footer-form">
+                <div class="footer-form">
                     <p class="footer-form-titel">Підпишіться на розсилку</p>
-                    <label class="footer-form-fild">
-                        <span class="footer-form-input-wrapper"><input type="email" class="footer-form-input" required
-                                name="user_mail" placeholder="E-mail" />
+                    <form class="footer-form-text"><label class="footer-form-fild">
+                            <input type="email" class="footer-form-input" required name="user_mail"
+                                placeholder="E-mail" />
+                        </label>
+                        <button type="submit" class="footer-form-sumbit">Підписатися<svg class="footer-form-input-icon"
+                                width="24" height="24">
+                                <use href="./images/icons.svg#icon-icon-send"></use>
+                            </svg></button>
+                    </form>
+                </div>
 
-                    </label>
-                    <button type="submit" class="footer-form-sumbit">Підписатися<svg class="footer-form-input-icon"
-                            width="24" height="24">
-                            <use href="./images/icons.svg#icon-icon-send"></use>
-                        </svg></button></span>
-
-                </form>
         </footer>
 
         <div class="backdrop is-hidden" data-modal>
@@ -486,13 +486,13 @@
                     <label class="modal-form-fild"><span class="modal-form-fild-desc">Коментар</span>
                         <textarea name="user_message" class="modal-form-message"
                             placeholder="Введіть текст"></textarea></label>
-                    <label class="modal-form-check-fild">
+                    <label class="modal-form-check-text">
 
                         <input type="checkbox" class="modal-form-check" name="user-comment" required />
                         <svg class="modal-form-own-checkbox" width="16" height="15">
                             <use class="modal-form-own-checkbox-icon" href="./images/icons.svg#icon-vector"></use>
                         </svg>
-                        Погоджуюся з розсилкою та приймаю&nbsp; <a href=""> Умови договору</a>
+                        Погоджуюся з розсилкою та приймаю&nbsp; <a href="" class="terms-contract"> Умови договору</a>
                     </label>
                     <button type="submit" class="modal-form-sumbit">Відправити</button>
                 </form>

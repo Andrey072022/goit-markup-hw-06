@@ -525,10 +525,10 @@ flex-direction: column;  height: 252px; */
 }
 
 .footer-form {
-  margin-right: 0;
   margin-left: auto;
-  margin-top: 75px;
-  margin-bottom: 91px;
+}
+.footer-form-fild {
+  display: inline-block;
 }
 .footer-form-titel {
   font-weight: 700;
@@ -556,6 +556,7 @@ flex-direction: column;  height: 252px; */
 }
 
 .footer-form-sumbit {
+  position: relative;
   width: 200px;
   height: 50px;
   background: var(--backgraund-color-btn);
@@ -567,17 +568,15 @@ flex-direction: column;  height: 252px; */
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--primary-text-color-light);
-  padding-left: 28px;
-  padding-bottom: 0;
-  padding-top: 0;
-  padding-right: 0;
+  padding-right: 40px;
+  margin-left: 10px;
 }
 
 .footer-form-input-icon {
+  position: absolute;
   fill: var(--primary-text-color-light);
-  padding-top: 13px;
-  padding-bottom: 13px;
-  margin-left: 10px;
+  margin-left: 15px;
+  top: 25%;
 }
 
 /* Портфоліо */
@@ -710,6 +709,19 @@ flex-direction: column;  height: 252px; */
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
+  transition: fill var(--transition-dur-and-fanc);
+}
+.modal-clous-btn:focus,
+.modal-clous-btn:hover {
+  fill: var(--accent-color);
+}
+.terms-contract {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
 
 /* модельна форма */
@@ -719,6 +731,7 @@ flex-direction: column;  height: 252px; */
   line-height: 23px;
   text-align: center;
   color: var(--primary-text-color-dark);
+  margin-bottom: 12px;
 }
 .modal-form {
   display: flex;
@@ -727,10 +740,10 @@ flex-direction: column;  height: 252px; */
 .modal-form-fild {
   margin-bottom: 10px;
 }
-.model-form-input-wrapper {
-  position: relative;
-  display: block;
+.modal-form-check-text {
+  margin-bottom: 20px;
 }
+
 .modal-form-input {
   width: 100%;
   height: 40px;
@@ -786,6 +799,7 @@ flex-direction: column;  height: 252px; */
 .modal-form-check-fild {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 .modal-form-check {
@@ -809,7 +823,8 @@ flex-direction: column;  height: 252px; */
   display: block;
 }
 .modal-form-sumbit {
-  width: 200px;
+  position: relative;
+  min-width: 200px;
   height: 50px;
   align-self: center;
   background: var(--accent-color);
